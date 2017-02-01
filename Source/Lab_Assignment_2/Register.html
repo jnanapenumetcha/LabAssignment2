@@ -10,10 +10,10 @@
 <div ng-controller="PersonController" data-ng-init="Page='Register Page'">
     <br/>
 <h1 style="color: maroon">Registration</h1>
-    <p>First Name:&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <input type="text" name="firstName" id="firstName" data-ng-model="person.fname"/><br/><br/>
-         Password:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="lastName" id="lastName" data-ng-model="person.lname"/><br/><br/>
-        Mobile Number:&nbsp; &nbsp; <input type="text" name="lastName" id="MobileNumber" data-ng-model="person.mobilenum"/><br/><br/>
-        Address:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input type="text" name="lastName" id="" data-ng-model="person.address"/>
+    <p><span class="req">*</span>First Name:&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <input type="text" name="firstName" id="firstName" data-ng-model="person.fname" required/><br/><br/>
+        <span class="req">*</span>Password:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="lastName" id="lastName" data-ng-model="person.lname" required/><br/><br/>
+        <span class="req">*</span>Mobile Number:&nbsp; &nbsp; <input type="text" name="lastName" id="MobileNumber" data-ng-model="person.mobilenum" required/><br/><br/>
+        <span class="req">*</span>Address:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input type="text" name="lastName" id="" data-ng-model="person.address" required/>
         <br/><br/><br/>
 
         <button id="myBtn" style="height:30px;width:80px; margin-left:150px">Register</button></p>
