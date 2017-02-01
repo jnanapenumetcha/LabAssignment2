@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="" data-ng-app="myApp">
+<head>
+    <meta t="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body background="login.jpg" style="text-align: center;">
+<h1 style="color: maroon">WELCOME !</h1>
+<br/><br/>
+<div ng-app="myApp" ng-controller="PersonController" >
+    <div class="input">
+        <p style="text-align: center "> Username: <input ng-model="user.firstName" required=""></input>
+            <br/><br/>
+            Password: <input ng-model="user.pwd" type="password" required=""></input>
+            <br/><br/>
+            <br/><br/>
+            <input type="submit" ng-click="login(user.firstName, user.pwd)" value="Login"></input>
+            <br/><br/>
+
+    </div>
+
+    <button style="height:30px;width:80px" onclick="location.href='Register.html'">Register</button></p>
+</div>
+</body>
+</html>
